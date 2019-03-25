@@ -4,7 +4,7 @@ This project is part of the Udacity Front-End Web Developer Nanodegree
 # Instructions
 
 ## How to start
-Simply open the following url: https://ediste.github.io/Classic-Arcade-Game/ OR clone the repo and open the index.ml
+Simply open the following url: https://ediste.github.io/Classic-Arcade-Game/ OR clone the repo and open the index.html
 
 ## How to play
 - You can use the arrow keys to move the character
@@ -16,7 +16,7 @@ Simply open the following url: https://ediste.github.io/Classic-Arcade-Game/ OR 
 - JavaScript
 
 # Credits
-- Udacity Starter Code from https://github.com/udacity/fend-project-memory-game
+- Udacity Starter Code from https://github.com/udacity/frontend-nanodegree-arcade-game
 - FontAwesome from https://fontawesome.com/
 - GoogleFonts from https://fonts.googleapis.com/
 - Background pattern from www.toptal.com/designers/subtlepatterns
