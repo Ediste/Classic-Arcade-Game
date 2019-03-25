@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bugs Arcade Game</title>
+  <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Acme|Fontdiner+Swanky">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+  <div class="game-container">
+    <header>
+      <h1>Bugs Arcade Game</h1>
+    </header>
+    <div class="score-panel">
+      <div class="score">
+        <ul class="lives">
+          <li><i class="fas fa-heart"></i></li>
+          <li><i class="fas fa-heart"></i></li>
+          <li><i class="fas fa-heart"></i></li>
+        </ul>
+      </div>
+
+      <div class="timer">
+        <span class="timerVal">00:00</span>
+        <span>Time</span>
+      </div>
+
+      <div class="avatar-button" title="select avatar">
+        <img class="avatar-image" src="images/char-boy.png" alt="avatar"></img>
+      </div>
+
+      <div class="restart-button" title="restart game">
+        <i class="fas fa-redo"></i>
+      </div>
+    </div>
+
+    <div class="game-panel">
+
+    </div>
+
+    <div class="kill-information hide">
+      <div class="kill-information-inner">
+        <i class="fas fa-skull"></i> <span class="killtext">You were killed by Erwin</span> <i class="fas fa-skull"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="success-container hide">
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+    <div class="success-panel">
+      <div class="success-icon">
+        <i class="fas fa-bug"></i>
+      </div>
+      <h1>Congratulations! You Won!</h1>
+      <p>
+        Finished with <span class="total-lives"></span> remaining Lives in <span class="total-play-time"></span>
+      </p>
+      <p class="review-text"></p>
+      <button class="play-again-button">Play again</button>
+    </div>
+  </div>
+
+  <div class="gameover-container hide">
+    <div class="gameover-panel">
+      <div class="gameover-icon">
+        <i class="fas fa-skull"></i>
+      </div>
+      <h1>Game Over</h1>
+      <p>
+        You were killed by <span class="gameover-killer-names">Erwin, Alfons and Hugo</span> in <span class="total-play-time"></span>
+      </p>
+      <button class="play-again-button">Play again</button>
+    </div>
+  </div>
+
+  <div class="avatar-selection-container hide">
+    <div class="avatar-selection-inner">
+      <div class="avatar-selection-head">
+        <span class="avatar-selection-close-button">x</span>
+        <h3>Select avatar</h3>
+      </div>
+      <div class="avatar-selection-body">
+
+        <ul class="avatars">
+          <li>
+            <div class="avatar-button" title="select avatar">
+              <img class="avatar-image" src="images/char-boy.png" alt="avatar"></img>
+            </div>
+          </li>
+
+          <li>
+            <div class="avatar-button" title="select avatar">
+              <img class="avatar-image" src="images/char-cat-girl.png" alt="avatar"></img>
+            </div>
+          </li>
+
+          <li>
+            <div class="avatar-button" title="select avatar">
+              <img class="avatar-image" src="images/char-horn-girl.png" alt="avatar"></img>
+            </div>
+          </li>
+
+          <li>
+            <div class="avatar-button" title="select avatar">
+              <img class="avatar-image" src="images/char-pink-girl.png" alt="avatar"></img>
+            </div>
+          </li>
+
+          <li>
+            <div class="avatar-button" title="select avatar">
+              <img class="avatar-image" src="images/char-princess-girl.png" alt="avatar"></img>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/resources.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
 </body>
+
 </html>
